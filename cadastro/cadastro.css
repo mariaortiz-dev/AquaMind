@@ -1,0 +1,172 @@
+/* ===========================
+   ESTILOS DA PÁGINA DE CADASTRO
+   =========================== */
+
+/* Título e textos */
+h1, p {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    color: black;
+}
+
+h1 {
+    color: #0084ff;
+}
+
+#resultado {
+    color: #0084ff;
+}
+
+
+/* ===========================
+   FORMULÁRIO
+   =========================== */
+
+form {
+    background-color: #fff;
+    max-width: 800px;
+    margin: 40px auto;
+    padding: 70px;
+    border-radius: 10px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+}
+
+
+/* ===========================
+   CAMPOS
+   =========================== */
+
+h2 {
+    margin-bottom: 15px;
+    color: #444;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+
+/* Inputs */
+input[type="text"],
+input[type="date"],
+input[type="email"],
+input[type="tel"],
+input[type="password"],
+textarea {
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+}
+
+input[type="radio"] {
+    margin: 0 5px;
+}
+
+
+/* ===========================
+   BOTÕES
+   =========================== */
+
+button,
+input[type="submit"],
+input[type="reset"] {
+    margin: 10px 5px 0 0;
+    border: none;
+    background-color: #277fd1;
+    color: white;
+    border-radius: 10px;
+    cursor: pointer;
+    font-size: 20px;
+    padding: 10px 18px;
+}
+
+button:hover,
+input[type="submit"]:hover,
+input[type="reset"]:hover {
+    background-color: #3297ca;
+}
+
+.btn {
+    background-color: rgb(65, 154, 13);
+}
+
+.btn:hover {
+    background-color: rgb(12, 162, 22);
+}
+
+.btn-r {
+    background-color: rgb(48, 94, 218);
+}
+
+.btn-r:hover {
+    background-color: rgb(63, 104, 216);
+}
+
+
+/* ===========================
+   VALIDAÇÕES
+   =========================== */
+
+#errorMessage {
+    color: red;
+    font-weight: bold;
+    text-align: center;
+    margin-top: 15px;
+}
+
+#nomes {
+    text-transform: capitalize;
+}
+
+
+/* ===========================
+   ÍCONE DE EXIBIR SENHA
+   =========================== */
+
+/* ---- ÍCONES DENTRO DO CAMPO DE SENHA ---- */
+.senha-container {
+    position: relative;
+}
+
+.senha-container i {
+    position: absolute;
+    right: 10px;     /* gruda na direita */
+    top: 50%;        /* centraliza verticalmente */
+    transform: translateY(-50%);
+    cursor: pointer;
+    font-size: 22px;
+    color: #666;
+}
+
+
+
+/* ===========================
+   DARK MODE PARA LABELS E TEXTOS
+   =========================== */
+
+body.dark-mode label,
+body.dark-mode h1,
+body.dark-mode h2,
+body.dark-mode p,
+body.dark-mode span,
+body.dark-mode .erro {
+    color: white !important;
+}
+
+/* Inputs no dark mode (opcional, mas recomendado) */
+body.dark-mode input,
+body.dark-mode textarea {
+    background-color: #1f1f1f;
+    color: white;
+    border-color: #555;
+}
+
+/* Fundo do formulário no dark mode */
+body.dark-mode form {
+    background-color: #2b2b2b;
+    box-shadow: 0 0 15px rgba(255, 255, 255, 0.1);
+}
